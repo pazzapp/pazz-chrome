@@ -1,0 +1,81 @@
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888;
+  margin: 10px;
+  padding: 5px;
+}
+
+p {
+  padding:0;
+
+}
+h1 {
+    font-size: 25px;
+    padding: 0px 0px 10px 0px;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #DADADA;
+}
+
+label {
+    display: block;
+    margin: 0px 0px 0px;
+}
+label>span {
+    float: left;
+    width: 135px;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input {
+    border: 1px solid #CCC;
+    color: #888;
+    height: 20px;
+    margin: 5px 0;
+    outline: none;
+    padding: 2px 4px;
+    width: 145px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+button#close {
+  font-size: 18px;
+  background-color: #FFF;
+  border: none;
+  position:absolute;
+  right:4px;
+  top: 4px;
+  padding: 5px 15px;
+  width: auto;
+}
+button {
+    font-size: 14px;
+    background: #EBEBEB;
+    border: 1px solid #DDD;
+    padding: 10px 25px 10px 25px;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    color: #888;
+}
+button:hover, button:focus {
+    background-color: #DDD;
+    border-color: #DDD;
+
+}
+button#close:hover {
+    background-color: #EBEBEB;
+}
+
+.icon {
+  border-radius: 4px;
+  background: white;
+  border: 1px solid #DDD;
+  font-size: 24px;
+  margin: auto;
+  display: inline-block;
+  padding: 4px 6px 3px 6px;
+}
