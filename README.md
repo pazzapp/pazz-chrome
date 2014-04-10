@@ -11,6 +11,8 @@ This means you can't choose your own passwords, but also that you'll never lose 
 
 pazz-chrome is a simple chrome extension that can use Pazz to generate and fill passwords quickly.
 
+![Screenshot](demo.png)
+
 ### Usage:
 
 To install pazz-chrome currently you can simply clone this repo and install it directly in developer mode in chrome.
