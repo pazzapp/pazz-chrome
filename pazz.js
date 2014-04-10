@@ -5,11 +5,13 @@ var tokens = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m",
               "2", "3", "4", "5", "6", "7", "8", "9", "!", "@", "#", "$",
               "%", "^", "&", "*", "-", "_", "?"];
 
+var salt = "better_than_nothing";
+
 var pazz = function(masterPassword, site) {
   var seed, siteHas, pairs, ints, chars;
-  
-  seed = (new jsSHA(masterPassword, "TEXT")).getHash("SHA-1", "HEX");
-  siteHash = (new jsSHA(seed + site, "TEXT")).getHash("SHA-1", "HEX");
+
+  seed = (new jsSHA(masterPassword + salt, "TEXT")).getHash("SHA-1", "HEX");
+  siteHash = (new jsSHA(seed + site + salt, "TEXT")).getHash("SHA-1", "HEX");
   pairs = siteHash.match(/(..)/g);
   ints = $.map(pairs, function(pair) { return parseInt(pair, 16) });
   chars = $.map(ints, function(i) { return tokens[i % tokens.length] });
