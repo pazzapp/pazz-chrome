@@ -71,11 +71,14 @@ button#close:hover {
 }
 
 .icon {
+  width: 75px;
+  height: 75px;
   border-radius: 4px;
   background: white;
   border: 1px solid #DDD;
-  font-size: 24px;
+  font-size: 38px;
   margin: auto;
   display: inline-block;
-  padding: 4px 6px 3px 6px;
+  padding: 15px;
+  box-sizing: border-box;
 }
