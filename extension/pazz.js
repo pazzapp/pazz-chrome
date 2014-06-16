@@ -8,7 +8,7 @@ var tokens = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m",
 var salt = "better_than_nothing";
 
 var pazz = function(masterPassword, site) {
-  var seed, siteHas, pairs, ints, chars;
+  var seed, siteHash, pairs, ints, chars;
 
   seed = (new jsSHA(masterPassword + salt, "TEXT")).getHash("SHA-1", "HEX");
   siteHash = (new jsSHA(seed + site + salt, "TEXT")).getHash("SHA-1", "HEX");
